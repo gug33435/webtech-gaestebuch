@@ -20,7 +20,7 @@ public class Eintrag {
 
     public Eintrag() {}
 
-    public Eintrag(String text, Date publishDate, String name) {
+    public Eintrag(String text, Date publishDate, String name, Long userID) {
         this.text = text;
         likes = 0;
         this.publishDate = publishDate;

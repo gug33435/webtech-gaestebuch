@@ -16,4 +16,10 @@ public class EintragService {
     public Eintrag get(Long id) {
         return repo.findById(id).orElseThrow(() -> new RuntimeException());
     }
+
+    public Iterable getallEintrag () {
+        Iterable test = repo.findAll();
+        System.out.println(test.toString());
+        return test;
+    }
 }

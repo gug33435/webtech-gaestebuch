@@ -19,4 +19,9 @@ public class EintragController {
         Long thingId = Long.parseLong(id);
         return service.get(thingId);
     }
+
+    @GetMapping("/eintrag/all")
+    public Iterable getAllEintrag() {
+        return service.getallEintrag();
+    }
 }

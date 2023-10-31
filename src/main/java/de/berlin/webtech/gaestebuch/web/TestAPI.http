@@ -3,7 +3,7 @@ POST http://localhost:8080/eintrag
 Content-Type: application/json
 
 {
-  "text": "Hi, der Besuch war super!!",
-  "publishDate": "2022-10-23",
-  "name": "Friedrich P."
+  "text": "Hi, der Besuch war schlecht!!",
+  "publishDate": "2022-10-31",
+  "name": "Friedrich N."
 }
