@@ -3,7 +3,13 @@ POST http://localhost:8080/eintrag
 Content-Type: application/json
 
 {
-  "text": "Hi, der Besuch war schlecht!!",
-  "publishDate": "2022-10-31",
-  "name": "Friedrich N."
+  "text": "Gualt!",
+  "name": "Nico"
 }
+
+###
+GET http://localhost:8080/eintrag/all
+Content-Type: application/json
+
+###
+DELETE http://localhost:8080/eintrag/delete/1

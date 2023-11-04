@@ -24,4 +24,10 @@ public class EintragController {
     public Iterable getAllEintrag() {
         return service.getallEintrag();
     }
+
+    @DeleteMapping("/eintrag/delete/{id}")
+    public String deleteById(@PathVariable String id) {
+        service.deleteById(Long.parseLong(id));
+        return "Delete id " + id + " called";
+    }
 }

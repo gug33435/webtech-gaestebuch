@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
 public class Eintrag {
@@ -14,17 +14,14 @@ public class Eintrag {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
+
     private int likes;
-    private Date publishDate;
+    private java.sql.Date publishDate;
     private String name;
 
-    public Eintrag() {}
-
-    public Eintrag(String text, Date publishDate, String name, Long userID) {
-        this.text = text;
-        likes = 0;
-        this.publishDate = publishDate;
-        this.name = name;
+    public Eintrag() {
+        this.likes = 0;
+        this.publishDate = new java.sql.Date(new java.util.Date().getTime());
     }
 
     public Long getId() {

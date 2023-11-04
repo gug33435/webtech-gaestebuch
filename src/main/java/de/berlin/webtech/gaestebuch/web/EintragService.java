@@ -22,4 +22,8 @@ public class EintragService {
         System.out.println(test.toString());
         return test;
     }
+
+    public void deleteById(Long id) {
+        repo.deleteById(id);
+    }
 }
