@@ -1,9 +1,6 @@
 package de.berlin.webtech.gaestebuch.web;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.sql.Date;
 
@@ -14,14 +11,15 @@ public class Eintrag {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
-
-    private int likes;
+    private int restID;
+    private double visitRating;
     private java.sql.Date publishDate;
     private String name;
+    private String email;
 
     public Eintrag() {
-        this.likes = 0;
-        this.publishDate = new java.sql.Date(new java.util.Date().getTime());
+        // this.restID = 0;
+        // this.publishDate = new java.sql.Date(new java.util.Date().getTime());
     }
 
     public Long getId() {
@@ -40,14 +38,6 @@ public class Eintrag {
         this.text = text;
     }
 
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
-    }
-
     public Date getPublishDate() {
         return publishDate;
     }
@@ -62,5 +52,29 @@ public class Eintrag {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public double getVisitRating() {
+        return visitRating;
+    }
+
+    public void setVisitRating(double visitRating) {
+        this.visitRating = visitRating;
+    }
+
+    public int getRestID() {
+        return restID;
+    }
+
+    public void setRestID(int restID) {
+        this.restID = restID;
     }
 }

@@ -3,8 +3,8 @@ POST http://localhost:8080/eintrag
 Content-Type: application/json
 
 {
-  "text": "Gualt!",
-  "name": "Nico"
+  "text": "War ganz gut, aber habe schon mal besser geegessen!",
+  "name": "Steffan Mahlsdorf"
 }
 
 ###

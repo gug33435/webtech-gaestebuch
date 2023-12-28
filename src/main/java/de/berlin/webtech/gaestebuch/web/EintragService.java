@@ -3,6 +3,8 @@ package de.berlin.webtech.gaestebuch.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.stream.StreamSupport;
+
 @Service
 public class EintragService {
 
