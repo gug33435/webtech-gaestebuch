@@ -17,9 +17,14 @@ public class Eintrag {
     private String name;
     private String email;
 
-    public Eintrag() {
-        // this.restID = 0;
-        // this.publishDate = new java.sql.Date(new java.util.Date().getTime());
+    public Eintrag() {}
+
+    public Eintrag(String text, int restID, double visitRating, String name, String email) {
+        this.text = text;
+        this.restID = restID;
+        this.visitRating = visitRating;
+        this.name = name;
+        this.email = email;
     }
 
     public Long getId() {
