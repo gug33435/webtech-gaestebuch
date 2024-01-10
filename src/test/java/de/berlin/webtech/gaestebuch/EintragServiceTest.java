@@ -13,6 +13,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.when;
 
 @SpringBootTest
 public class EintragServiceTest {
